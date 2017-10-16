@@ -26,19 +26,43 @@
 
         var map = new google.maps.Map(document.getElementById('map'), options);
 
-        //Add marker
-        var marker = new google.maps.Marker({
-          position:{lat:-45.8788, lng:170.5028},
-          map:map
-        });
+        //Make array for the markers
+        var markers = [
+          {
+            coords:{lat:-45.898, lng:170.4972},
+            content:'South Dunedin'
+          },
+          {
+            coords:{lat:-45.8588, lng:170.5128},
+            content:'North Dunedin'
+          }
+        ];
 
-        var infoWindow = new google.maps.InfoWindow({
-          content:'<h1>Dunedin NZ</h1>'
-        });
+        //Loop through markers
+        for(var i = 0; i < markers.length; i++)
+        {
+          addMarker(markers[i]);
+        }
 
-        marker.addListener('click', function(){
-          infoWindow.open(map, marker);
-        });
+        //Add marker function
+        function addMarker(props)
+        {
+          var marker = new google.maps.Marker({
+            position:props.coords,
+            map:map
+          });
+
+          if(props.content)
+          {
+            var infoWindow = new google.maps.InfoWindow({
+              content:props.content
+            });
+
+            marker.addListener('click', function(){
+              infoWindow.open(map, marker);
+            });
+          }
+        }
       }
     </script>
     <script async defer
