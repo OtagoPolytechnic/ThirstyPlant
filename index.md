@@ -2,22 +2,6 @@
 layout: default
 title: Thirsty Plant
 ---
-<script>
-  function initMap()
-  {
-    var options =
-    {
-      zoom:8,
-      center:{lat:-45.8788, lng:170.5028}
-    }
-
-    var map = new google.maps.Map(document.getElementById('map'), options);
-  }
-</script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuSpWUy7vSYA7OZcNuA_epLmA1SjMYC4&callback=initMap">
-</script>
-
 
 <div class="container">
     <div class="starter-template">
