@@ -11,13 +11,6 @@
 
     <title>{{ page.title }}</title>
 
-    <style>
-      #map {
-        height:400px;
-        width:100%;
-      }
-    </style>
-
   </head>
 
   <body>
@@ -33,7 +26,7 @@
 
         var map = new google.maps.Map(document.getElementById('map'), options);
       }
-
+  </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
         </script>
