@@ -12,4 +12,3 @@ title: Home
 </div><!-- /.container -->
 
 
-</html>
