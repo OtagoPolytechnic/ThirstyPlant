@@ -1,6 +1,4 @@
-   ---
-
-redirect_from: "/ThingsNetworkDunedin/"
+---
 layout: default
 title: Home
 ---
