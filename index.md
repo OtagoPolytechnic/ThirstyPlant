@@ -22,8 +22,6 @@ title: Thirsty Plant
               <h2>Map - fill me in</h2>
               <p>Map showing nodes</p>
 
-              <div id="map"></div>
-
           </div>
        </div>
     </div>
