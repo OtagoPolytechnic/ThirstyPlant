@@ -10,8 +10,13 @@ title: Thirsty Plant
       </div>
       
       <div class="node-list">
-        <h1>Nodes</h1>
-        <p class="lead">List of nodes</p>
+        <h1>Node list</h1>
+        <p>List of nodes</p>
+      </div>
+      
+      <div class="map">
+        <h1>Map - fill me in</h1>
+        <p>List of nodes</p>
       </div>
 
 </div><!-- /.container -->
