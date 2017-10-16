@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Thirsty Plant
 ---
 
 <div class="container">
