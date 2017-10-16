@@ -20,7 +20,7 @@ title: Thirsty Plant
           <div class="col-md-7">
               <div class="starter-template">
               <h2>Map - fill me in</h2>
-              <p>List of nodes</p>
+              <p>Map showing nodes</p>
           </div>
        </div>
     </div>
