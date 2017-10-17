@@ -15,11 +15,15 @@ title: Add Node
                   <div class="form-group">
                     <label for="nodeName">Name:</label>
                     <input type="text" class="form-control" id="nodeName" required>
-                    
-                    <h3>GPS Coordinates</h3>
+                    <br>
                     <label for="nodeLocation">GPS Coordinates:</label>
                     <input type="text" class="form-control" id="nodeLocation" required>
                   </div>
+                  
+                  
+                  <br>
+                  
+                  <button type="button" class="btn">Save</button>
                   
 
               </div>
@@ -32,7 +36,7 @@ title: Add Node
           </div>
        </div>
        
-       <button type="button" class="btn">Save</button>
+       
        
     </div>
 
