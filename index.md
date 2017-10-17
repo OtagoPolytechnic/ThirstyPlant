@@ -19,7 +19,7 @@ title: Thirsty Plant
 
           <div class="col-md-7">
               <div class="starter-template">
-              <h2>Map - fill me in</h2>  <button type="button" class="btn">Basic</button>
+              <h2>Map - fill me in</h2>  <button type="button" class="btn">Add a Node</button>
               <p>Map showing nodes</p>
 
               <div id="map"></div>
