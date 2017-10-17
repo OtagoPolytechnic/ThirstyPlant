@@ -14,11 +14,11 @@ title: Add Node
               <div class="starter-template">
                   <div class="form-group">
                     <label for="nodeName">Name:</label>
-                    <input type="text" class="form-control" id="nodeName">
+                    <input type="text" class="form-control" id="nodeName" required>
                     
                     <h3>GPS Coordinates</h3>
                     <label for="nodeLocation">GPS Coordinates:</label>
-                    <input type="text" class="form-control" id="nodeLocation">
+                    <input type="text" class="form-control" id="nodeLocation" required>
                   </div>
                   
 
