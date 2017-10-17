@@ -21,54 +21,52 @@
   <body>
 
     <script>
-      function initMap()
+       function initMap()
+  {
+    var options =
+    {
+      zoom:15,
+      center:{lat:-45.8650, lng:170.5120}
+    }
+
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+    //Make array for the markers
+    var markers = [
       {
-        var options =
-        {
-          zoom:15,
-          center:{lat:-45.8650, lng:170.5140}
-        }
-
-        var map = new google.maps.Map(document.getElementById('map'), options);
-
-        //Make array for the markers
-        var markers = [
-          {
-            coords:{lat:-45.898, lng:170.4972},
-            content:'South Dunedin'
-          },
-          {
-            coords:{lat:-45.8588, lng:170.5128},
-            content:'North Dunedin'
-          }
-        ];
-
-        //Loop through markers
-        for(var i = 0; i < markers.length; i++)
-        {
-          addMarker(markers[i]);
-        }
-
-        //Add marker function
-        function addMarker(props)
-        {
-          var marker = new google.maps.Marker({
-            position:props.coords,
-            map:map
-          });
-
-          if(props.content)
-          {
-            var infoWindow = new google.maps.InfoWindow({
-              content:props.content
-            });
-
-            marker.addListener('click', function(){
-              infoWindow.open(map, marker);
-            });
-          }
-        }
+        coords:{lat:-45.8660, lng:170.5186},
+        content:'Otago Polytechinic, this is the information window that will pop up when a node is clicked'
       }
+    ];
+
+    //Loop through markers
+    for(var i = 0; i < markers.length; i++)
+    {
+      addMarker(markers[i]);
+    }
+
+    //Add marker function
+    function addMarker(props)
+    {
+      var marker = new google.maps.Marker({
+        position:props.coords,
+        map:map
+      });
+
+      if(props.content)
+      {
+        var infoWindow = new google.maps.InfoWindow({
+          content:props.content
+        });
+
+        marker.addListener('click', function(){
+          infoWindow.open(map, marker);
+        });
+      }
+    }
+
+
+  }
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuSpWUy7vSYA7OZcNuA_epLmA1SjMYC4&callback=initMap">
