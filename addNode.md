@@ -5,7 +5,7 @@ title: Add Node
 
 <div class="container">
     <div class="starter-template">
-        <h1>Nodes</h1>
+        <h1>Add a new Node</h1>
         <p class="lead">Here you can add a node</p>
      </div>
 
