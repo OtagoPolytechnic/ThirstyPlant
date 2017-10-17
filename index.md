@@ -12,14 +12,14 @@ title: Thirsty Plant
      <div class="row">
           <div class="col-md-5">
               <div class="starter-template">
-                  <h2>Node list</h2>
+                  <h2>Node list</h2>  <button type="button" class="btn">Add a Node</button>
                   <p>List of nodes</p>
               </div>
           </div>
 
           <div class="col-md-7">
               <div class="starter-template">
-              <h2>Map - fill me in</h2>  <button type="button" class="btn">Add a Node</button>
+              <h2>Map - fill me in</h2>
               <p>Map showing nodes</p>
 
               <div id="map"></div>
