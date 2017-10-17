@@ -17,6 +17,7 @@ title: Add Node
                     <input type="text" class="form-control" id="nodeName" required>
                     <br>
                     <label for="nodeLocation">GPS Coordinates:</label>
+                    <p>Please note the required format is........................</p>
                     <input type="text" class="form-control" id="nodeLocation" required>
                   </div>
                   
