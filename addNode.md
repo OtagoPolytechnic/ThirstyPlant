@@ -15,10 +15,13 @@ title: Add Node
                   <div class="form-group">
                     <label for="nodeName">Name:</label>
                     <input type="text" class="form-control" id="nodeName">
+                    
+                    <h3>GPS Coordinates</h3>
+                    <label for="nodeLocation">GPS Coordinates:</label>
+                    <input type="text" class="form-control" id="nodeLocation">
                   </div>
                   
-                  <h3>Node list</h3>  
-                  <p>List of nodes</p>
+
               </div>
           </div>
 
