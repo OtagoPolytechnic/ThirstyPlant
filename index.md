@@ -14,6 +14,11 @@ title: Thirsty Plant
               <div class="starter-template">
                   <h2>Node list</h2>  <button type="button" class="btn">Add a Node</button>
                   <p>List of nodes</p>
+                  <ul class="list-group">
+                      <li class="list-group-item">First item</li>
+                      <li class="list-group-item">Second item</li>
+                      <li class="list-group-item">Third item</li>
+                  </ul>
               </div>
           </div>
 
