@@ -5,7 +5,7 @@ title: View Node
 
 <div class="container">
     <div class="starter-template">
-        <h1>Add a new Node</h1>
+        <h1>View Node</h1>
         <p class="lead">View node information</p>
      </div>
 
