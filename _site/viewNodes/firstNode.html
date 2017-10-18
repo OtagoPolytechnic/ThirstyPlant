@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+    <title>View Node</title>
+    <style>
+    #map {
+     height:400px;
+     width:400px;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <script>
+       function initMap()
+  {
+    var options =
+    {
+      zoom:15,
+      center:{lat:-45.8660, lng:170.5186}
+    }
+
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+    //Make array for the markers
+    var markers = [
+      {
+        coords:{lat:-45.8660, lng:170.5186},
+        content:'Otago Polytechinic, this is the information window that will pop up when a node is clicked'
+      }
+    ];
+
+    //Loop through markers
+    for(var i = 0; i < markers.length; i++)
+    {
+      addMarker(markers[i]);
+    }
+
+    //Add marker function
+    function addMarker(props)
+    {
+      var marker = new google.maps.Marker({
+        position:props.coords,
+        map:map
+      });
+
+      if(props.content)
+      {
+        var infoWindow = new google.maps.InfoWindow({
+          content:props.content
+        });
+
+        marker.addListener('click', function(){
+          infoWindow.open(map, marker);
+        });
+      }
+    }
+
+
+  }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuSpWUy7vSYA7OZcNuA_epLmA1SjMYC4&callback=initMap">
+    </script>
+
+    <br>
+    <div class="container">
+
+      <div class="container">
+    <div class="starter-template">
+        <h1>View Node</h1>
+        <p class="lead">Here you can view the information being send from a node.</p>
+     </div>
+
+     <div class="row">
+          <div class="col-md-5">
+              <div class="starter-template">
+                <h2>Latest moisture Level</h2>
+                <p>Gauge showing current/latest data</p>
+                <br />
+                <p>This gauge shows the current soil moisture level</p>
+                <br />
+                <br />
+                <br />
+                <p>If the moisture level is below ... then display a warning (orange) or if below ... display an alert(red)</p>
+              </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="starter-template">
+                <h2>History graph</h2>
+                <p>Graph showing history</p>
+            </div>
+       </div>
+       
+       
+       
+    </div>
+
+
+</div>
+<!-- /.container -->
+
+
+
+    </div>
+
+      <footer>
+
+      </footer>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   </body>
+</html>
