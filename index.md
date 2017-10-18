@@ -12,12 +12,11 @@ title: Thirsty Plant
      <div class="row">
           <div class="col-md-5">
               <div class="starter-template">
-                  <button type="button" class="btn">Add a Node</button>
                   <h2>Current Nodes</h2>
                   <br>
                   <ul class="list-group">
                       <li class="list-group-item">First item</li>
-                      <li class="list-group-item">Second item</li>
+                      <li class="list-group-item">On item click go to view node page</li>
                       <li class="list-group-item">Third item</li>
                   </ul>
               </div>
