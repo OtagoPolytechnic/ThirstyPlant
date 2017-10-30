@@ -15,6 +15,7 @@ title: View Node
                 <h2>Latest moisture Level</h2>
                 <p>Gauge showing current/latest data</p>
                 <br>
+                
                 <p>This gauge shows the current soil moisture level</p>
                 <br>
                 <br>
