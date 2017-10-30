@@ -21,7 +21,7 @@
   <body>
 
     <script>
-       function initMap()
+  function initMap()
   {
     var options =
     {
@@ -35,7 +35,8 @@
     var markers = [
       {
         coords:{lat:-45.8660, lng:170.5186},
-        content:'Otago Polytechinic, this is the information window that will pop up when a node is clicked'
+        content:'Otago Polytechinic, this is the information window that will pop up when the user hovers over the nodes marker.',
+        link:'viewNodes/firstNode.html'
       }
     ];
 
@@ -59,13 +60,20 @@
           content:props.content
         });
 
-        marker.addListener('click', function(){
+          // Added a mouseover function so that when user hovers over the marker a brief description of the node is displayed
+        marker.addListener('mouseover', function(){
+          infoWindow.setOptions({disableAutoPan: true});        //Stopped the map from moving when you hover over a marker
           infoWindow.open(map, marker);
         });
       }
+
+        // Added a click function so that when the user clicks on the marker they are then redirected to the page for the node
+      marker.addListener('click', function(){
+         if(props.link)
+         {
+            window.location.href = props.link;
+         }});
     }
-
-
   }
     </script>
     <script async defer
