@@ -1,3 +1,4 @@
+// removed require for node.js xmlhttprequest
 // this is the login function which, when provided with a valid username and password
 // returns a JWT that can be used in all other API requests
 function getJWT(username, pass){
