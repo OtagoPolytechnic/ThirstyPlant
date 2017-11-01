@@ -54,6 +54,6 @@ function onJWT(jwt){
   };
   xhr.send();
 }
-var username = process.argv[2];
-var pass = process.argv[3];
+var username = "public";
+var pass = "public";
 var jwt = getJWT(username, pass);
