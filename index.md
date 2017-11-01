@@ -2,6 +2,7 @@
 layout: default
 title: Thirsty Plant
 ---
+<!-- why won't this load properly?! -->
 <script src="{{ site.baseurl }}/js/loraserverAPIcall.js"></script>
 
 <div class="container">
