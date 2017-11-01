@@ -3,8 +3,6 @@ layout: default
 title: Thirsty Plant
 ---
 
-<script src="/js/loraserverAPIcall.js"/>
-
 <div class="container">
     <div class="starter-template">
         <h1>Nodes</h1>
