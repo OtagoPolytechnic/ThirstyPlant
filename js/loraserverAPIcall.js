@@ -1,4 +1,3 @@
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 // this is the login function which, when provided with a valid username and password
 // returns a JWT that can be used in all other API requests
 function getJWT(username, pass){
@@ -15,7 +14,7 @@ function getJWT(username, pass){
 	}
 	// turn it into a string. This will be used in the http body
 	var loginString = JSON.stringify(loginJSON);
-	xhr.onload = function (e) {
+	xhr.onreadystatechange  = function (e) {
 	  if (xhr.readyState === 4) {
 		if (xhr.status === 200) {
 		  onJWT(xhr.responseText);
@@ -37,7 +36,7 @@ function onJWT(jwt){
 // get all nodes from application 3
   xhr.open("GET", "https://iot.op-bit.nz/api/applications/4/nodes?limit=100", true);
 	xhr.setRequestHeader("Grpc-Metadata-Authorization", JSON.parse(jwt).jwt);
-  xhr.onload = function (e) {
+  xhr.onreadystatechange = function (e) {
     if (xhr.readyState === 4) {
 	  // if everything is ok
       if (xhr.status === 200) {
