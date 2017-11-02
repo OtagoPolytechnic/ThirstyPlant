@@ -16,7 +16,7 @@ title: Thirsty Plant
                   <h2>Current Nodes</h2>
                   <br>
                   <ul class="list-group">
-                      <li class="list-group-item"><a href="./viewNodes/firstNode">First item</a></li>
+                      <li class="list-group-item"><a href="./viewNodes/firstNodes">First item</a></li>
                       <li class="list-group-item">On item click go to view node page</li>
                       <li class="list-group-item">Third item</li>
                   </ul>

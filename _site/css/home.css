@@ -10,3 +10,51 @@ body {
   height:400px;
   width:400px;
 }
+
+/* For Moisture Gauge */
+#gauge {
+    height: 440px;
+    width: 100%;
+}
+
+.pane
+{
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    text-align: center;
+    width: 850px;
+    height: 100%;
+    padding: 50px;
+    margin-top: 25px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 3px 0px #e3e3e3;
+    box-shadow: 0px 1px 3px 0px rgba(112,112,112,0.05);
+}
+
+    .pane .long-title
+    {
+        position: absolute;
+        top: 15px;
+        text-align: center;
+        width: 850px;
+        overflow: hidden;
+    }
+
+        .pane .long-title h3
+        {
+            font-size: 28px;
+        }
+
+    .pane .credits
+    {
+        color: rgba(128, 128, 128, 0.75);
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+    }
+	
+.case-container svg {
+	margin: 0 auto;
+}

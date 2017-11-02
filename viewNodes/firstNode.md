@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: nodes
 title: View Node
 ---
 
@@ -21,20 +21,24 @@ title: View Node
                 <br>
                 <br>
                 <p>If the moisture level is below ... then display a warning (orange) or if below ... display an alert(red)</p>
-              </div>
-          </div>
-
+				 <br>
+               
+                <div id="chartContainer" class="case-container" style="float:left; width: 100%; height: 240px;"></div>
+          
+<br>
           <div class="col-md-7">
             <div class="starter-template">
                 <h2>History graph</h2>
                 <p>Graph showing history</p>
             </div>
-       </div>
-       
-       
-       
-    </div>
-
-
+       </div>    
+    
 </div><!-- /.container -->
+
+
+       
+   
+
+
+
 
